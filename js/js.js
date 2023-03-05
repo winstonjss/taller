@@ -1,6 +1,6 @@
 function botonConfirmar(){
     var x;
-var r=confirm("En realidad desea Cancelar la Deuda?");
+var r=confirm("¿Desea dejar la pagina?");
 if (r==true)
   {
   x="You pressed OK!";
