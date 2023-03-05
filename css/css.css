@@ -1,38 +1,89 @@
-nav {
-    background-color: #333;
-    height: 50px;
-  }
+body {
+  margin: 0;
+}
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 1200px);
+  /* altura mínima igual a la altura de la ventana menos la altura del navbar y footer */
+  border: 1px solid #000;
+  margin: 50px auto;
+    /* esto centra el main horizontalmente */
+  max-width: 10px;
+  max-height: 400px;
+  /* esto limita el ancho máximo del main */
+  padding: 1px;
+}
+
+
+nav {
+  background-color: red;
+  color: #fff;
+  height: 60px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  font-size: 35px;
+  line-height: 62px
+  
+}
 
 footer {
-  background-color: #333;
+  background-color: red;
   color: #fff;
-  height: 100px;
-  position: absolute;
+  height: 110px;
   bottom: 0;
-  left: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
   width: 100%;
+  font-size: 35px;
+  line-height: 110px;
 }
 
-.boton-1{
-  font-size:20px;
-  font-family:Verdana,Helvetica;
-  color:white;
+footer.mt-auto {
+  margin-top: 30px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+li {
+  display: inline-block;
+  line-height: 40px;
+  margin-bottom: 0px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+.boton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -30px;
+  margin-bottom: -10px;
+}
+
+.boton-1 {
+  font-size: 30px;
+  font-family: Verdana, Helvetica;
+  color: white;
   text-align: center;
   align-content: center;
-  background:red;
-  border:0px;
-  width:130px;
-  height:30px;
-}
-.boton-2{
-  font-size:20px;
-  font-family:Verdana,Helvetica;
-  color:white;
-  text-align: center;
-  align-content: center;
-  background:red;
-  border:0px;
-  width:130px;
-  height:30px;
-}
+  background: red;
+  width: 200px;
+  height: 50px;
+  border: 1px solid black; /* agrega un borde de 2px en color negro */
+
+}       
